@@ -12,6 +12,8 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP],  # bootstrap t
 ]
 )
 
+server = app.server
+
 data = pd.read_csv('data/data.tsv', sep='\t')
 data = data.loc[:, ~data.columns.str.contains('^Unnamed')]
 data['airdate'] = pd.to_datetime(data['airdate'])
