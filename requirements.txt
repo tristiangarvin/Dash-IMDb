@@ -5,3 +5,4 @@ pandas
 numpy
 dash_dangerously_set_inner_html
 datetime
+gunicorn
